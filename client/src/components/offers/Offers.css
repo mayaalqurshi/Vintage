@@ -1,0 +1,48 @@
+.offers{
+    margin: auto;
+    padding: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+}
+.offers h1{
+    font-size:40px;
+    
+}
+.offers_left{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.check_now{
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: white;
+    border-radius:20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500; 
+    cursor: pointer;
+}
+.check_now:hover{
+    width: 250px;
+    background-color: #b7a6a4;
+    color: white;
+}
+
+.offers_right{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offers_right img{
+    width:80%;
+}

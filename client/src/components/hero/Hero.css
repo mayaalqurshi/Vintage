@@ -1,0 +1,60 @@
+.hero{
+    
+    padding: 20px;
+    height: 100vh;
+    background:linear-gradient(white,#b7a6a4 80%);
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    
+}
+.hero_left{
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    line-height: 1.1;
+}
+.hero_new_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_new_icon img{
+    width:20%;
+    
+}
+.hero_latest{
+    width: 240px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: white;
+    border-radius:20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500; 
+    cursor: pointer;
+}
+.hero_latest:hover{
+    width: 260px;
+    background-color:black;
+    color: white;
+}
+.hero_latest img{
+    width:20px;
+    height:20px;
+}
+.hero_right{
+    margin: auto;
+}
+.hero_right img{
+    margin: 20px;
+    width:90%;
+    height: 80%;
+}

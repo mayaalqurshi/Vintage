@@ -1,0 +1,11 @@
+.new_collections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.new_collections_items{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}

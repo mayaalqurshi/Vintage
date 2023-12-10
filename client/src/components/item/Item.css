@@ -1,0 +1,20 @@
+.item{
+    width:350px;
+}
+.item_prices{
+    display:flex;
+    gap:10px;
+}
+.item_new_price{
+    font-size:18px;
+}
+.item_old_price{
+    font-size:18px;
+    text-decoration: line-through;
+    color: red;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition:0.6;
+}
