@@ -1,0 +1,21 @@
+.shop_category {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.shop_category_index_sort {
+	margin: 10px;
+}
+.shop_category_sort {
+	display: flex;
+	gap: 10px;
+}
+.shop_category_sort img {
+	width: 20px;
+}
+.shop_category_products {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
