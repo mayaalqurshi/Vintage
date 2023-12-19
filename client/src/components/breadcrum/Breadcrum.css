@@ -1,0 +1,10 @@
+.breadcrum {
+    margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+    align-items: center;
+}
+.breadcrum img {
+	height: 16px;
+}
