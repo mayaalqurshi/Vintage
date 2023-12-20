@@ -1,5 +1,7 @@
 import { getFirestore } from '@firebase/firestore';
-import { initializeApp } from 'firebase/app';
+import firebase, { initializeApp } from 'firebase/app';
+
+firebase.app().delete();
 
 const firebaseConfig = {
 	apiKey: 'AIzaSyDBiB2F3CwESYxHeGH092vCG0TRRTfI0vM',

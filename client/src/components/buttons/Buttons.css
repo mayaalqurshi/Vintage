@@ -1,0 +1,42 @@
+/* Style the main button of the project */
+.button_style{
+    outline: none;
+    border:none;
+    border-radius:20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Button Sizes */
+.button-small{
+    width: 150px;
+    height: 45px;
+}
+.button-small:hover{
+    background-color:#A78295;
+}
+.button-medium{
+    width: 200px;
+    height: 50px;
+}
+.button-large{
+    width: 250px;
+    height: 50px;
+}
+
+/* Button Colors */
+.button-dark{
+    background-color:#331D2C;
+    color: white;
+}
+.button-light{
+    background-color:#A78295;
+    color: black;
+}
+.button-transparent{
+    background-color: transparent;
+    color: black;
+}

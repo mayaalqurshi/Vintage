@@ -3,15 +3,13 @@ import instagramIcon from '../assets/Icons/Instagram.png';
 import linkedinIcon from '../assets/Icons/Linkedin.png';
 import TwitterIcon from '../assets/Icons/Twitter.png';
 import whatsappIcon from '../assets/Icons/Whatsapp.png';
-import logo from '../assets/Logo/Main_Logo_1_NoBg.png';
+import MainLogo from '../logo/MainLogo.js';
 import './Footer.css';
 
 const Footer = () => {
 	return (
 		<div className='footer'>
-			<div className='footer_logo'>
-				<img src={logo} alt='Main Logo' />
-			</div>
+			<MainLogo />
 			<ul className='footer_links'>
 				<li>Company</li>
 				<li>Products</li>
@@ -33,7 +31,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className='footer_copyright'>
-                <hr/>
+				<hr />
 				<p>Copyright @ 2023 - All rights reserved.</p>
 			</div>
 		</div>
