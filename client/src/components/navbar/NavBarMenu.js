@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import moreMenuIcon from '../assets/Icons/More_Menu.png';
+
 
 const NavBarMenu = () => {
 	const [menu, setMenu] = useState('women');
 	return (
 		<div>
+			<div className='nav_more_menu'>
+				<Link to='#'>
+					<img src={moreMenuIcon} alt='More' />
+				</Link>
+			</div>
 			<ul className='nav_menu'>
 				<li
 					onClick={() => {

@@ -1,11 +1,12 @@
 .signup {
 	margin: auto;
-	margin-bottom: 40px;
-	padding: 10px;
+	padding-top: 10px;
+	margin-bottom:60px;
 	width: 400px;
 	height: 100%;
-	background: gray;
+	background:#331D2C;
 	border-radius: 20px;
+	color: #fff;
 	text-align: center;
 }
 .signup_container {
@@ -24,40 +25,22 @@
 	flex-direction: column;
 	gap: 20px;
 }
-.signup_fields input {
-	height: 40px;
-	width: 300px;
-	border: 1px solid rgb(161, 159, 159);
-	outline: none;
-	color: black;
-	font-size: 16px;
-}
-.signup_container button {
-	width: 80%;
-	height: 50px;
-	outline: none;
-	border: 1px solid;
-	border-radius: 20px;
-	color: white;
-	font-size: 20px;
-	font-weight: 500;
-	background-color: #b7a6a4;
-	cursor: pointer;
-}
-.signup_container button:hover {
-	background-color: black;
-}
+
 .signup_agree {
-	font-size: 14px;
+	margin-top:20px;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    gap:4px
+    gap:4px;
+}
+.signup_agree p{
+	font-size: 14px;
+	color: black;
 }
 .signup_login_account {
-	font-size: 14px;
+	margin:20px;
+	font-size:14px;
+	color: black;
 }
-.signup_login_account span {
-	color: #b7a6a4;
-	font-weight: 700;
-}
+

@@ -78,10 +78,15 @@
     display: flex;
     font-size: 14px;
     font-weight: 500;
+    text-decoration: none;
     line-height: 1.5;
     text-transform: uppercase;
     outline: 0;
     border: 0;
+}
+.link_button_text{
+    color:#A78295;
+    text-decoration: none;
 }
 .link_button:before {
     background-color: #b7a6a4;

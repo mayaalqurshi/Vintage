@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from '../src/components/footer/Footer.js';
 import './App.css';
@@ -8,13 +9,11 @@ import Login from './pages/Login.js';
 import Product from './pages/Product.js';
 import ShopCategory from './pages/ShopCategory.js';
 import Signup from './pages/Signup.js';
-
 function App() {
 	return (
 		<div>
 			<BrowserRouter>
 				<Navbar />
-				
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/women' element={<ShopCategory category='women' />} />
