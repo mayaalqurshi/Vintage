@@ -13,26 +13,25 @@ const Navbar = () => {
 	const totalAmount = getTotalCartItem();
 	return (
 		<div className='nav_bar'>
-			<MainLogo />
 			<NavBarMenu />
+			<MainLogo />
 			<div className='nav_buttons'>
 				<div className='nav_cart_count'>{totalAmount}</div>
 				<Link to='/cart' style={{ textDecoration: 'none' }}>
 					<img className='nav_cart_icon' src={cart} alt='Shopping Cart Icon'></img>
 				</Link>
 				<div className='nav_auth_buttons'>
-					<MainButton url='/signup' buttonColor={'button-transparent'}>
+					{/* <MainButton url='/signup' buttonColor={'button-transparent'}>
 						Sign Up
-					</MainButton>
+					</MainButton> */}
 					<MainButton url='/login'>Log In</MainButton>
 				</div>
 				<div className='nav_more_menu'>
-				<Link to='#'>
-					<img src={moreMenuIcon} alt='More' />
-				</Link>
+					<Link to='#'>
+						<img src={moreMenuIcon} alt='More' />
+					</Link>
+				</div>
 			</div>
-			</div>
-			
 		</div>
 	);
 };

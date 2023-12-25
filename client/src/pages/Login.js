@@ -1,6 +1,6 @@
 import React from 'react';
+import LinkButton from '../components/buttons/LinkButton.js';
 import './css/Login.css';
-
 const Login = () => {
 	return (
 		<div className='login'>
@@ -12,7 +12,7 @@ const Login = () => {
 				</div>
 				<button>Log in</button>
 				<p className='login_create_account'>
-					You don't have an account yet? <span>Sign Up</span>
+					You don't have an account yet? <LinkButton url='/signup'>Sign Up</LinkButton>
 				</p>
 			</div>
 		</div>

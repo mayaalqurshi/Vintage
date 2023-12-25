@@ -3,20 +3,10 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const NavBarMenu = () => {
-	const [menu, setMenu] = useState('home');
+	const [menu, setMenu] = useState('women');
 	return (
 		<div>
 			<ul className='nav_menu'>
-				<li
-					onClick={() => {
-						setMenu('home');
-					}}
-				>
-					<Link className='nav_menu_link' to='/' style={{ textDecoration: 'none' }}>
-						Home
-					</Link>
-					{menu === 'home' ? <hr /> : <></>}
-				</li>
 				<li
 					onClick={() => {
 						setMenu('women');

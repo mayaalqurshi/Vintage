@@ -9,6 +9,11 @@ const Shop = () => {
 	return (
 		<div>
 			<Hero />
+			<h1>maya</h1>
+			<h2>maya</h2>
+			<h3>maya</h3>
+			<h4>maya</h4>
+			<p>maya</p>
 			<Popular />
 			<Offers />
 			<NewCollections />

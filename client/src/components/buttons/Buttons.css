@@ -1,23 +1,63 @@
 /* Style the main button of the project */
 .button_style{
-    outline: none;
-    border:none;
-    border-radius:20px;
+    --color: #331D2C;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 10px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    font-size: 20px;
-    font-weight: 500;
+    transition: 0.5s;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
 }
 
+.button_style::before, .button_style::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+}
+   
+.button_style::before {
+    top: -1em;
+    left: -1em;
+}
+   
+.button_style::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+.button_style:hover::before, .button_style:hover::after {
+    height: 410px;
+    width: 410px;
+}
+   
+.button_style:hover {
+    color: white;
+}
+   
+.button_style:active {
+    filter: brightness(.8);
+}
+   
 /* Button Sizes */
 .button-small{
     width: 150px;
     height: 45px;
 }
-.button-small:hover{
-    background-color:#A78295;
-}
+
 .button-medium{
     width: 200px;
     height: 50px;
@@ -27,16 +67,32 @@
     height: 50px;
 }
 
-/* Button Colors */
-.button-dark{
-    background-color:#331D2C;
-    color: white;
-}
-.button-light{
-    background-color:#A78295;
-    color: black;
-}
-.button-transparent{
+/* Style Button Links */
+.link_button{
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
-    color: black;
+    color: #b7a6a4;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+}
+.link_button:before {
+    background-color: #b7a6a4;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    margin-right: 10px;
+    transition: all .42s cubic-bezier(.25,.8,.25,1);
+    width: 0;
+}
+.link_button:hover:before {
+    background-color: #b7a6a4;
+    width: 3rem;
 }

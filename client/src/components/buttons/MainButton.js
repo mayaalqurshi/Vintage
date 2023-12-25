@@ -16,7 +16,10 @@ const MainButton = ({ url, children, buttonSize, buttonColor }) => {
 	return (
 		<div>
 			<Link to={url} style={{ textDecoration: 'none' }}>
-				<button className={`button_style ${checkButtonSize} ${checkButtonColor}`}>{children}</button>
+				<button className={`button_style ${checkButtonSize} ${checkButtonColor}`}>
+				{children}
+					
+				</button>
 			</Link>
 		</div>
 	);
